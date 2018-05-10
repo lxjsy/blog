@@ -2,6 +2,7 @@
 layout: post
 title: HEXO进阶
 tag: 博客
+category: HEXO
 ---
 
 HEXO接近是最近有一些朋友提出的问题，然后我做了总结，如果你也在使用HEXO，不妨看看，应该会有些帮助。

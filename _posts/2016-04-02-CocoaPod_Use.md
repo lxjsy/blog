@@ -3,6 +3,7 @@ layout: post
 title: CocoaPods使用心得
 date: 2016-04-02
 tag: iOS 
+category: iOS
 --- 
 
 ### 简介：   
