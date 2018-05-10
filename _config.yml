@@ -1,12 +1,13 @@
 # Basic
-title: 潘柏信
-subtitle: 个人站
-description: 欢迎来到我的个人站~
+title: 陆锡佳
+subtitle: Blog
+description: Welcome~
 # 头像里面的标题
 avatarTitle: leopardpan
 # 头像里面的描述
-avatarDesc: iOS / 机器学习
-url: "http://baixin.io"
+avatarDesc: 软件工程
+baseurl: "/blog"
+url: "http://luxijia.top"
 
 # Comment
 comment:
