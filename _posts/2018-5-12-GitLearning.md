@@ -41,7 +41,7 @@ Git可以在文件修改到一定程度的时候，可以保存一个快照，�
 
 #### 工作区与暂缓区
 这个部分要重点理解
-![工作区与暂缓区](images/git/workandstage.png)
+![工作区与暂缓区](/images/git/workandstage.png)
 * 工作区（Working Directory）：电脑中能看到的目录
 * 版本库（Repository）：包括缓存区（stage/index）和分支
 
