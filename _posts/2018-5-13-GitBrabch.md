@@ -40,6 +40,8 @@ Git会将每一次提交串成一条时间线，这条时间线就是一个分�
 
 第一种情况是`Fast-forward`类型，即快进模式，分支合并会非常顺利，Git直接把`master`指针指向新分支的指针，工作区内容不变，但这种方式并不好，一般使用[分支管理策略](#分支管理策略)。
 
+![Fastforward](/images/git/fastforward.png)
+
 第二种情况会出现合并冲突，Git无法进行快速合并，因此需要对冲突进行解决，再提交和合并分支。
 
 #### 冲突解决
@@ -49,16 +51,22 @@ Git会将每一次提交串成一条时间线，这条时间线就是一个分�
 	git log --graph --pretty=oneline --abbrev-commit 
 ```
 
+![collision](/images/git/collision.png)
+
 ### 分支管理策略
 在进行分支合并市，Git在可能的情况下使用`Fast forward`模式，但是这种模式会导致在删除分支后，分支信息会丢失。
 
 使用命令`git merge --merge --no-ff`来强制禁用`Fast forward`模式，Git就会在meger时生成一个新的commit，因此需要参数`-m`添加描述。这时可以通过命令`git log`查看分支历史。
+
+![no-ff](/images/git/no-ff.png)
 
 #### 原则
 * `master`分支应该非常稳定仅用来发布新版本，平时不能在上面工作
 * 在其他分支上进行工作，当开发到一定阶段，将分支与主分支进行合并，将阶段性版本进行发布
 
 团队合作的工作分支
+
+![teamwork](/images/git/teamwork.png)
 
 #### Bug分支
 在修复Bug时，通常会通过创建新的bug分支进行修复，然后合并，最后删除。
