@@ -19,7 +19,7 @@ tag: Git
 Git会将每一次提交串成一条时间线，这条时间线就是一个分支。
 
 在初始化Git仓库的时候，默认创建一个名为`master`的主分支，`master`指向分支的最新提交。当每一次提交，`master`分支都会向前移动一步，这样，随着你的不断提交，`master`分支的线也越来与越长。其他的分支也是类似的工作。
-`HEAD`指向的时当前工作分支中的当前版本库，结合[Git版本库创建和版本修—版本回退](/_posts/2018-05-12-GitLearning.md)综合理解。
+`HEAD`指向的时当前工作分支中的当前版本库，结合[Git版本库创建和版本修—版本回退](http://luxijia.top/2018/05/GitLearning)综合理解。
 
 通过命令`git branch`查看Git中的所有分支。
 
@@ -48,7 +48,7 @@ Git会将每一次提交串成一条时间线，这条时间线就是一个分�
 当出现上述第二种情况，在使用分支合并命令进行分支合并的时候，Git会提示我们冲突的地方，也可以使用`git status`可以看到冲突的文件。
 查看冲突的文件，Git通过`<<<<<<<<`,`=======`,`>>>>>>>>`标记出不同分支的内容。我们将冲突的文件修改后，再添加、提交。通过带参数的`git long`查看分支合并情况。
 ```
-	git log --graph --pretty=oneline --abbrev-commit 
+$ git log --graph --pretty=oneline --abbrev-commit 
 ```
 
 ![collision](/images/git/collision.png)
@@ -79,6 +79,22 @@ Git会将每一次提交串成一条时间线，这条时间线就是一个分�
 在恢复工作现场时，可以使用两类指令。前者恢复工作现场，但不删除`stash`中的内容，需要通过命令`git stash drop`来删除，后者在恢复工作现场的同时把`stash`内容也删除了。
 
 #### Featrue分支
-软件开发中，总有
+软件开发中，总有新的功能不断被添加，因此开发一个新的featrue，新建一个分支。
+
+如果要丢弃一个没有被合并过的分支，可以通过命令`git branch -D <name>`强行删除。
+
+#### 多人协作
+下面时多人协作中的信息查看和仓库配置
+* 查看远程库信息，使用命令`git remote -v`
+* 克隆远程仓库，使用命令`git clone <ssh/https url>`进行克隆
+* 从远程仓库进行克隆时，默认只有`master`分支，需要使用命令`git checkout -b <branch-name> origin/<branch-name>`在本地创建和远程分支对应的分支。
+
+多人协作的工作模式
+> 1. 工作提交，通过命令`git push origin <branch-name>`推送自己的修改
+> 2. 如果推送失败，则因为远程分支比本地库更新，需要用`git pull`试图合并
+> 3. 如果合并有冲突，则解决冲突，并在本地提交
+> 4. 没有冲突或者解决冲突，再执行步骤1
+
+如果`git pull`提示“no tracking information”，则说明本地分支和远程分支的链接关系没有创建，用命令`git branch --set-upstream branch-name origin/branch-name`。
 
 
