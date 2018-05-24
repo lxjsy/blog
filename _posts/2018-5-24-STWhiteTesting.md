@@ -59,7 +59,7 @@ RTRT，代码测试，视觉测试器，C++测试器等等
 
 ### 逻辑覆盖测试
 
-[logic coverage](images/ST/WhiteTesing/logiccoverage.png)
+![logic coverage](/images/ST/WhiteTesing/logiccoverage.png)
 
 #### 语句覆盖(Statement coverage)
 语句覆盖设计一系列测试用例，让程序所有可执行语句至少实现一次
@@ -101,7 +101,7 @@ RTRT，代码测试，视觉测试器，C++测试器等等
 ### 控制流图
 控制流图在用来描述程序的结构性程序流程图基础上，通过简化图形符号，突出程序的控制流结构
 
-[contral flow graph](images/ST/WhiteTesing/graph.png)
+![contral flow graph](/images/ST/WhiteTesing/graph.png)
 
 * 简化的控制流图
 在判断语句中，不具体考虑所有的条件，仅用一个标记符号表示
