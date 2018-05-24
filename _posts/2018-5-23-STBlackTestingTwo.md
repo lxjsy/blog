@@ -49,6 +49,7 @@ tag: Software Testing
 No charges are reimbursed（报销）to the patient until the deductible（扣除） has been met. After the deductible has been met, the amount to be reimbursed depends on whether or not the doctor or hospital is a "Preferred Provider." For preferred providers Doctor's office visits are reimbursed at 65% and Hospital visits are reimbursed at 95%. For other providers reimburse 50% for Doctor's Office visits or 80% for Hospital visits. 
 
 Decison table
+
 |choice\rule|1|2|3|4|5|
 |-----------|-|-|-|-|-|
 |C1：deductible?|F|T|T|T|T|
@@ -72,6 +73,7 @@ D1 = {Day in 2 to 31}
 D2 = {Day in 1}
 
 Decison table
+
 |choice\rule|1|2|3|4|5|6|
 |-----------|-|-|-|-|-|-|
 |Month|M1 M2<br>M3 M4|M1|M2|M3|M4|M4|
@@ -95,45 +97,45 @@ Decison table
 * Implication(等价)
 IF C1 is 1, then E1 is 1 also,else E1 is 0.
 
-[Implication](/images/ST/CauseEffectGraphing/Implication.png)
+[Implication](images/ST/CauseEffectGraphing/Implication.png)
 
 * Not(非)
 IF C1 is 1, then E1 is 0,else E1 is 1.
 
-[Not](/images/ST/CauseEffectGraphing/Not.png)
+[Not](images/ST/CauseEffectGraphing/Not.png)
 
 * Or(或)
 if C1 or C2 or C3 is 1，then E1 is 1，else E1is 0."Or" may have arbitrary number of inputs.
 
-[Or](/images/ST/CauseEffectGraphing/Or.png)
+[Or](images/ST/CauseEffectGraphing/Or.png)
 
 * And(与)
 if both C1 and C2 are 1，then E1is1，else E1is 0. "And" may have arbitrary number of input.
 
-[And](/images/ST/CauseEffectGraphing/And.png)
+[And](images/ST/CauseEffectGraphing/And.png)
 
 #### 约束
 在实际问题中，输入状态存在某些依赖
 
 * Exclusive()
 
-[Exclusive](/images/ST/CauseEffectGraphing/Exclusive.png)
+[Exclusive](images/ST/CauseEffectGraphing/Exclusive.png)
 
 * Inclusive()
 
-[Inclusive](/images/ST/CauseEffectGraphing/Inclusive.png)
+[Inclusive](images/ST/CauseEffectGraphing/Inclusive.png)
 
 * One and only one()
 
-[Onlyone](/images/ST/CauseEffectGraphing/Onlyone.png)
+[Onlyone](images/ST/CauseEffectGraphing/Onlyone.png)
 
 * Requires()
 
-[Require](/images/ST/CauseEffectGraphing/Require.png)
+[Require](images/ST/CauseEffectGraphing/Require.png)
 
 * Masking()
 
-[Masking](/images/ST/CauseEffectGraphing/Masking.png)
+[Masking](images/ST/CauseEffectGraphing/Masking.png)
 
 ### 因果图方法步骤
 1. 规格说明文档确定原因和效果，并为其分配一个唯一的标识符（注意：效果也可能是其他影响的原因）
@@ -145,7 +147,7 @@ if both C1 and C2 are 1，then E1is1，else E1is 0. "And" may have arbitrary num
 > Cause-Effect Testing：In a given network, the sendfile command is used to send a file to a user on a different file server. The sendfile command takes three arguments: the first argument should be an existing file in the sender’s home directory, the second argument should be the name of the receiver’s file server, and the third argument should be the receiver’s userid. If all the arguments are correct, then the file is successfully sent; otherwise the sender obtains an error message. 
 
 solution
-[solve1](/images/ST/CauseEffectGraphing/solve1.png)
+[solve1](images/ST/CauseEffectGraphing/solve1.png)
 
 > 中国象棋走马下法：
 > 1. 如果落点在棋盘外，则不移动棋子；
@@ -158,8 +160,8 @@ solution
 > 请画出因果图，并转换成判定表
 
 solution
-[solve2](/images/ST/CauseEffectGraphing/solve2-1.png)
-[solve3](/images/ST/CauseEffectGraphing/solve2-2.png)
+[solve2](images/ST/CauseEffectGraphing/solve2-1.png)
+[solve3](images/ST/CauseEffectGraphing/solve2-2.png)
 不可能的情况没有列举出来，因为测试用例不需要用到该部分
 
 ### 正交矩阵测试方法
@@ -196,6 +198,7 @@ solution
 solution 
 最少实验次数=（2-1）+（2-1）+（2-1）+1 = 4
 选择L<sub>4</sub>(2<sup>3</sup>)的正交矩阵实验
+
 |choice\rule| Top | Middle | Bottom | excpepted result |
 |-----------|-----|--------|--------|------------------|
 |1|hidden|hidden|hidden|all hidden|
