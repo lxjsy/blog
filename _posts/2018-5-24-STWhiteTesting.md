@@ -1,8 +1,10 @@
+---
 layout: post
 title: "白盒测试"
 date: 2018-5-24 15:53:10
 description: "白盒测试"
 tag: Software Testing
+---
 本章学习软件测试中的白盒测试方法！
 
 白盒测试
