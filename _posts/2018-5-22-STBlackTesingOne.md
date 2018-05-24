@@ -21,6 +21,8 @@ tag: Software Testing
 ### 等价类划分方法
 输入数据和输出结果通常属于不同的类，这些类中的成员都是有关联的。每个类都是一个等价部分或是程序的行为与类中成员相同的域。测试用例应该从每部分选择出来。
 
+#### 
+
 #### 等价类
 等价类是输入域或者输出域的子集，每个等价类中的典型数据与其他数据应该相同。
 
@@ -40,6 +42,13 @@ tag: Software Testing
 > 输入数据有限制，有效单一无效多。
 >
 > 等价划分综合断，类中有类细定度。
+
+### 测试步骤
+1. 找出所有的等价类
+2. 建立一个表格，列出所有的等价类
+3. 给每一个等价类标上独立的标号
+4. 设计一个新的测试用例，让其尽可能多地包含有效等价类，直到覆盖所有的有效等价类
+5. 设计一个新的测试用例，让其仅包含一个无效等价类，直到覆盖所有的无效等价类
 
 #### 例题
 > Consider an application App that takes two inputs `name` and `age`, where name is a nonempty string containing at most 20 alphabetic(字母) characters and age is an integer that must satisfy the constraint 0≤age≤120. The App is required to display an error message if the input value provided for age is out of range. The application truncates any name that is more than 20-character in length and generates an error message if an empty string is supplied for name. 
