@@ -95,7 +95,7 @@ RTRT，代码测试，视觉测试器，C++测试器等等
 * 选择型-构成分支结构
 * 重复性-构成循环结构
 
-[NS](images/ST/WhiteTesing/NS.png)
+![NS](/images/ST/WhiteTesing/NS.png)
 从最内层往外层计算，最内层为最小无相等的层次的结构使用加法计算次数，并列层次结构使用乘法
 
 ### 控制流图

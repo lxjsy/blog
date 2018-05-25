@@ -147,7 +147,8 @@ if both C1 and C2 are 1，then E1is1，else E1is 0. "And" may have arbitrary num
 > Cause-Effect Testing：In a given network, the sendfile command is used to send a file to a user on a different file server. The sendfile command takes three arguments: the first argument should be an existing file in the sender’s home directory, the second argument should be the name of the receiver’s file server, and the third argument should be the receiver’s userid. If all the arguments are correct, then the file is successfully sent; otherwise the sender obtains an error message. 
 
 solution
-![solve1](/images/ST/CauseEffectGraphing/solve1.png)
+
+![solve1](/images/ST/CauseEffectGraphing/solve1.jpg)
 
 > 中国象棋走马下法：
 > 1. 如果落点在棋盘外，则不移动棋子；
@@ -160,8 +161,8 @@ solution
 > 请画出因果图，并转换成判定表
 
 solution
-![solve2](/images/ST/CauseEffectGraphing/solve2-1.png)
-![solve3](/images/ST/CauseEffectGraphing/solve2-2.png)
+![solve2](/images/ST/CauseEffectGraphing/solve2-1.jpg)
+![solve3](/images/ST/CauseEffectGraphing/solve2-2.jpg)
 不可能的情况没有列举出来，因为测试用例不需要用到该部分
 
 ### 正交矩阵测试方法
