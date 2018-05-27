@@ -78,7 +78,7 @@ Decison table
 |-----------|-|-|-|-|-|-|
 |Month|M1 M2<br>M3 M4|M1|M2|M3|M4|M4|
 |Day|D1|D2|D2|D2|D2|D2|
-|Year|-|-|-|-|-|Y1|Y2|
+|Year|-|-|-|-|Y1|Y2|
 |year - 1|-|-|-|T|-|-|
 |month - 1|-|T|T|-|T|T|
 |month set 12|-|-|-|T|-|-|
