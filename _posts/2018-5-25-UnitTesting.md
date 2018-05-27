@@ -91,11 +91,15 @@ Requirement --> High-level desgin --> low-level desgin --> Code
 * 优秀程序员的代码不需要进行单元测试
 * 集成测试能获取所有的bug
 * 低成本效率
+
 ### 单元测试策略
+
 * 桩(Stub)
+
 桩是模拟测试模块的工作过程中调用的模块，只处理很少的数据
 
 * 驱动(Driver)
+
 驱动是模调用测试模块的模块，其接受测试数据并传输到相应的测试模块，以启动测试模块和得到相应的结果
 
 ![unit](/images/ST/UnitTesting/unit.png)
