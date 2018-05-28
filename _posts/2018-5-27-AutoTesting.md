@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "软件测试管理与自动化"
-date: 2018-5-27 15:50:25 
+date: 2018-5-27 18:46:33 
 description: "软件测试过程中的软件测试管理与自动化"
 tag: Software Testing
 ---
