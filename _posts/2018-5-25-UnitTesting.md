@@ -9,6 +9,7 @@ tag: Software Testing
 本章继续学习单元测试！
 
 ### 测试过程
+软件测试是为了发现程序中的错误而执行程序的过程;
 测试是一个逐步扩大的过程，从最小的单元到最后的整个系统
 
 Unit tesintf --> Integration testing --> System testing
