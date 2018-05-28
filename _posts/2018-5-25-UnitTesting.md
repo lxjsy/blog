@@ -21,7 +21,7 @@ Requirement --> High-level desgin --> low-level desgin --> Code
 ![process](/images/ST/UnitTesting/testprocess.png)
 
 ### 单元测试
-单元测试是单独且独立地审查(scrutinized)应用程序最小的可测试部分（单元）自身操作的软件开发过程
+单元测试是单独且独立地审查(scrutinized)应用程序最小的可测试部分（单元）自身操作的软件开发过程;是对软件基本组成单元进行测试，又称模块测试
 
 * 一个单元是软件设计中的最小的单元
 * 一个单元可能是一个特定的函数、一个类方法、一个模块或者一组小模块
@@ -33,9 +33,9 @@ Requirement --> High-level desgin --> low-level desgin --> Code
 
 #### 单元测试的基本特征
 一般情况下，被测单元与其他单元进行隔离，其具有三种基本特征
-* 特定的功能(Clear function)
+* 明确的功能(Clear function)
 * 与其他单元有明确的接口定义(Clear Interface definition)
-* 规范定义(Specifications definition)
+* 规格定义(Specifications definition)
 
 ### 目的
 * 确认编码是否与设计一致
@@ -67,7 +67,6 @@ Requirement --> High-level desgin --> low-level desgin --> Code
 * 代码必须满足单元测试严格的、书面的要求(Contract)
 * 能够在开发周期的早期发现问题
 * 集成后错误会放大，集成后复杂性高，很难发现问题
-* 
 
 ### 测试类型
 单元测试有两种测试类型：静态测试和动态测试
